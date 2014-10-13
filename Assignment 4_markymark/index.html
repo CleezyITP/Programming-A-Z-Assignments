@@ -17,9 +17,7 @@
 .line-separator{
 
 height:1px;
-
 background:white;
-
 border-bottom:1px solid #313030;
 
 }
@@ -35,7 +33,7 @@ border-bottom:1px solid #313030;
     border-width: 10px;
     background-position: center;
     position:absolute;
-    width:1000px;
+    width:600px;
     height:4000px;
     margin: 10% 20% 0 20%;
       
@@ -49,8 +47,9 @@ border-bottom:1px solid #313030;
     background-position: center;
     background-attachment: fixed;
     position:absolute;
+    
     /*background-size: contain;*/
-    width:1000px;
+    width:600px;
     height:4000px;
     padding-left: 50%;
     padding-right: 20%;
@@ -60,8 +59,9 @@ border-bottom:1px solid #313030;
 }
 
 #containerDiv{
-width: 1000px;
+width: 500px;
 height:auto;
+float:center;
 
 }
     #spacerdiv {
@@ -69,23 +69,171 @@ height:auto;
       margin-top: 250px;
       
       
+      
     }
 
     a{
       color:#CFB023;
     }
+
+
+@media screen and (max-width:5000px)
+{
+  #containerdiv{width: 4500px; }
+
+  .line-separator{margin:auto;}
+  
+  #titleDiv
+  {
+    clear: left;
+    float: center;
+    margin: 150px 0 0 10%;
+    /*margin-left:10% !important;*/
+    width: 4000px;
+  }
+
+#lowerHalf{
+margin-top: 70px !important;
+margin-left: 100% !important;
+}
+
+footer{
+margin-top: 70px !important;
+margin-left: 100% !important;
+}
+  
+  #div1 { margin-left:75%; width: 2000px; }
+  
+  #div2{width: 1500px;margin-left:20%;}
+  
+}
+    
+    
+
+    
+@media screen and (max-width:2000px)
+{
+  #containerdiv{width: 1500px; }
+
+  .line-separator{margin:auto;}
+  
+  #titleDiv
+  {
+    clear: left;
+    float: center;
+    margin: 150px 0 0 10%;
+    margin-left:18% !important;
+    width: 1000px;
+  }
+
+#lowerHalf{
+margin-top: 70px !important;
+margin-right: 400px !important;
+}
+
+footer{
+margin-top: 70px !important;
+margin-right: 400px !important;
+}
+  
+  #div1 { margin-left:10%; width: 1250px; }
+  
+  #div2{width: 1200px;margin:0s;}
+  
+}
+    
+    
+    
+    
+    
+    @media screen and (max-width:999px)
+{
+  #containerdiv{ width: 800px; }
+
+  .line-separator{margin:auto;}
+  
+  #titleDiv
+  {
+    clear: left;
+    float: center;
+    margin: 50px 0 0 0;
+    width: 550px;
+  }
+
+  #lowerHalf{margin-left: 40%;}
+  footer(margin-left: 40%;)
+
+  #div1 { width: 750px; }
+  
+  #div2{width: 700px;}
+  
+  
+}
+
+@media screen and (max-width:480px)
+{
+  #containerdiv { width: 400px; }
+  
+  #div1 { width: 350px; }
+  
+  #div2{width: 300px;}
+  
+  #button{border:none;border-style: none;border-width: 0px;}
+  
+  
+  #titleDiv
+  {
+    border:none;
+    float: center;
+    width: auto;
+    margin-left:0px;
+  }
+  
+  .line-separator{margin:auto;}
+  
+  #spacerdiv
+  {
+    float: center;
+    width: auto;
+    margin-bottom:-20px;
+  }
+  
+  #lowerHalf
+  {
+    float: center;
+    width: auto;
+    margin: 0;
+    margin-left:0px;
+  }
+  
+  footer {
+          float: center;
+    width: auto;
+    margin: 0;
+    margin-left:-20px;
+    
+  }
+}
+
+    
+    
+    
+    
+    
+    
   </style>
 </head>
 
 <body>
 
-
-<h1 id = "title" style="font-size:118px;margin-top:50px;font-family:black; color:white;text-align:center; padding-bottom:0px;">Which Christian Denomination Should I Choose?</h1>
-<p><a href="#" id = "button" style="text-decoration:none;margin-top:10px;text-align:center;border-style: solid;border-width: 5px; border-radius:25%; padding:10px;">CLICK TO SHOP FOR GOD</a></p>
-<p id = "prompt" style="text-align:center;color:white; margin-bottom:-120px; padding:20px"></p>
-
-
+<div id="titleDiv" style="margin-left:25%">
+<h1 id = "title" style="font-size:55px; margin-top: 50px;font-family:black; color:white;text-align:center; padding-bottom:0px;">Which Christian Denomination Should I Choose?</h1>
+<p><a href="#" id = "button" style="text-decoration:none;margin: 10% 0 10% 0;text-align:center;border-style: solid;border-width: 5px; border-radius:25%; padding:10px;">CLICK TO SHOP FOR GOD</a></p>
+<p id = "prompt" style="text-align:center;color:white; padding:20px"></p>
 <div class="line-separator"></div>
+</div>
+
+
 
 <div id="containerDiv">
 <div id="div1" data-stellar-background-ratio="2">
@@ -93,17 +241,20 @@ height:auto;
 </div>
 </div>
 </div>
-<div id = "spacerdiv"></div>
-<h1 id = "name"style="font-size:78px;color:white;text-align:center;" >Empty Shopping Cart</h1>
 
-<p><a href="data/church.txt" style="padding-bottom:200px">List of Christian Denominations</a></p>
+<div id = "spacerdiv"style="margin-left:25%"></div>
 
+<div id="lowerHalf" style="margin-left:25%">
+<h1 id = "name"style="margin-top: -70px;font-size:36px;color:white;text-align:center;" >Empty Shopping Cart</h1>
+<p><a href="data/church.txt" style="text-align:center">List of Christian Denominations</a></p>
+</div>
 </body>
 
 
-<footer style="text-align:center; font-size:18px;color:white;padding-top:50px;">
+<footer style="text-align:center; font-size:12px; color:white;margin: 10% -25% 30px 25%;">
   
-  <p>-Here, a Markov Chain algorithm is used to generate a jumbled denomination from a list of 376 real Christian denominations-<br> Based on Daniel Shiffman's "Markov by Character" Example, 2014</p>
+  <p>-Here, a Markov Chain algorithm is used to generate a jumbled denomination from a list of 376 real Christian denominations-
+  <br> <style="font-size:8px;">Based on Daniel Shiffman's "Markov by Character" Example, 2014</style></p>
 
 
 </footer>
